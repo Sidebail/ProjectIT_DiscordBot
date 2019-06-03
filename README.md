@@ -4,5 +4,5 @@ This is a repository for our group project from Georgian College. We are creatin
 ## Commands
 #####!timer 
 <p>We can set up countdown timer. When the countdown reaches 0, the bot will say "It's time!"</p>
-<p>Format: (minutes):(seconds)</p>
+<p>Format: !timer (minutes):(seconds)</p>
 <p>Sample format: <code>!timer 1:30</code> for 90 seconds.</p>
