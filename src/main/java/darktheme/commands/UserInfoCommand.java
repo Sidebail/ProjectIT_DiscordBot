@@ -4,7 +4,7 @@ import org.javacord.api.entity.message.MessageAuthor;
 import org.javacord.api.entity.message.embed.EmbedBuilder;
 import org.javacord.api.event.message.MessageCreateEvent;
 
-public class UserInfo implements Command {
+public class UserInfoCommand implements Command {
     @Override
     public void process(MessageCreateEvent event) {
         MessageAuthor author = event.getMessageAuthor();
