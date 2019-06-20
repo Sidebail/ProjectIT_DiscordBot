@@ -1,8 +1,6 @@
 package darktheme.listeners;
 
-import darktheme.commands.Command;
-import darktheme.commands.CountdownTimerCommand;
-import darktheme.commands.PingPongCommand;
+import darktheme.commands.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.javacord.api.event.message.MessageCreateEvent;
@@ -17,6 +15,9 @@ public class CommandHandler implements MessageCreateListener {
     public CommandHandler() {
         commands.put("ping", new PingPongCommand());
         commands.put("timer", new CountdownTimerCommand());
+        commands.put("flip", new FlipCoinCommand());
+        commands.put("userinfo", new UserInfoCommand());
+        commands.put("clear", new ClearCommand());
     }
 
     @Override
@@ -34,6 +35,5 @@ public class CommandHandler implements MessageCreateListener {
 
             logger.info(event.getMessageAuthor().getDiscriminatedName() + " invoked: " + command);
         }
-
     }
 }
