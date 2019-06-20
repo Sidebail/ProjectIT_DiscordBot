@@ -17,6 +17,7 @@ public class CommandHandler implements MessageCreateListener {
         commands.put("timer", new CountdownTimerCommand());
         commands.put("flip", new FlipCoinCommand());
         commands.put("userinfo", new UserInfoCommand());
+        commands.put("clear", new ClearCommand());
     }
 
     @Override
