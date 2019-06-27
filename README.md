@@ -19,3 +19,7 @@ This is a repository for our group project from Georgian College. We are creatin
 <p>This function only can be used by person who own this bot. This function will delete a message depends on what number you type.</p>
 <p>Format: <code>!clear</code> - will delete maximum 100 message </p>
 <p>Format2: <code>!clear 1</code> <code>!clear 10</code>, <code>!clear 50</code> - will delete 1, 10, 50 messages.
+  
+### ! time
+<p>This command show the local time of Barrie when user type this command. </p>
+<p>Format: <code>!time</code><p/>
