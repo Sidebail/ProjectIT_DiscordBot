@@ -23,3 +23,7 @@ This is a repository for our group project from Georgian College. We are creatin
 ### ! time
 <p>This command show the local time of Barrie when user type this command. </p>
 <p>Format: <code>!time</code><p/>
+
+### !ban
+<p>This command will ban another user from the server </p>
+<p>Format: <code>!ban @UserToBan</code><p/>
