@@ -27,3 +27,7 @@ This is a repository for our group project from Georgian College. We are creatin
 ### !ban
 <p>This command will ban another user from the server </p>
 <p>Format: <code>!ban @UserToBan</code><p/>
+
+### !kick
+<p>This command will kick another user from the server </p>
+<p>Format: <code>!kick @UserToKick</code><p/>
