@@ -9,13 +9,15 @@ public class BanCommand implements Command {
      * @param event
      */
     public void process(MessageCreateEvent event) {
+        //Check if user has permission to ban users
         if (event.getMessageAuthor().canBanUsersFromServer()){
+            //Verify the user entered the command correctly
             if (!event.getMessage().getMentionedUsers().isEmpty()){
                 User user = event.getMessage().getMentionedUsers().get(0);
                 event.getServer().get().banUser(user);
                 event.getChannel().sendMessage(user.getMentionTag() + " has been banned from the server!");
             }else{
-                event.getChannel().sendMessage("`Error: Ban usage -> !ban @user`");
+                event.getChannel().sendMessage("`Error: Ban usage -> !ban @userToBan`");
             }
         }else{
             event.getChannel().sendMessage(event.getMessageAuthor().asUser().get().getMentionTag() +" you don't have the required permissions to use this command!");
