@@ -16,3 +16,5 @@
 
 # Ignore the log from running the bot
 /log/
+
+/target/
