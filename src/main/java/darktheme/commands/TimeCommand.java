@@ -21,7 +21,7 @@ public class TimeCommand implements Command{
         MessageAuthor author = event.getMessageAuthor();
         EmbedBuilder embed = new EmbedBuilder()
                 .setTitle("Barrie")
-                .addField("Time", author.LocalDateTime.now(), true)
+                .addField("Time", String.valueOf(LocalDateTime.now()), true)
                 .setAuthor(author);
         
         event.getChannel().sendMessage(embed);

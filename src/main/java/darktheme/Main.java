@@ -13,15 +13,11 @@ public class Main {
     private static Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        if (args.length < 1) {
-            System.err.println("Please provide a valid token as the first argument!");
-            return;
-        }
         //Enable debugging, if no slf4j logger was found
         FallbackLoggerConfiguration.setDebug(true);
 
         //Store the token (the first argument of the program)
-        String token = args[0];
+        String token = System.getenv("DISCORD_API_KEY");
 
         //Login to Discord
         DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
