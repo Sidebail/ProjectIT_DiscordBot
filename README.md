@@ -31,3 +31,13 @@ This is a repository for our group project from Georgian College. We are creatin
 ### !kick
 <p>This command will kick another user from the server </p>
 <p>Format: <code>!kick @UserToKick</code><p/>
+
+### !mute
+#####Note
+<p>The server owner must create a role called 'Muted', and set it's permissions to not allow sending messages for every channel!</p>
+<p>This command will mute another user from the server </p>
+<p>Format: <code>!mute @UserToMute</code><p/>
+
+### !unmute
+<p>This command will unmute another user from the server </p>
+<p>Format: <code>!kick @UserToMute</code><p/>
