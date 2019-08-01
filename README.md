@@ -40,4 +40,4 @@ This is a repository for our group project from Georgian College. We are creatin
 
 ### !unmute
 <p>This command will unmute another user from the server </p>
-<p>Format: <code>!kick @UserToMute</code><p/>
+<p>Format: <code>!unmute @UserToMute</code><p/>
