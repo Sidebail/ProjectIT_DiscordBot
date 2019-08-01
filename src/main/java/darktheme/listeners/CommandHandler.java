@@ -21,6 +21,8 @@ public class CommandHandler implements MessageCreateListener {
         commands.put("time", new TimeCommand());
         commands.put("ban", new BanCommand());
         commands.put("kick", new KickCommand());
+        commands.put("mute", new MuteCommand());
+        commands.put("unmute", new UnmuteCommand());
     }
 
     @Override
